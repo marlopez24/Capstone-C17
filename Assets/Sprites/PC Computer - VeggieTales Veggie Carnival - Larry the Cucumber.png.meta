@@ -233,12 +233,12 @@ TextureImporter:
       name: Cucumber 7
       rect:
         serializedVersion: 2
-        x: 538
-        y: 1637
-        width: 265
-        height: 233
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1242
+        y: 1623
+        width: 193
+        height: 385
+      alignment: 9
+      pivot: {x: 0.4714735, y: 0.49999937}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -338,10 +338,10 @@ TextureImporter:
       name: Cucumber 4
       rect:
         serializedVersion: 2
-        x: 530
-        y: 2085
-        width: 217
-        height: 270
+        x: 571
+        y: 1188
+        width: 160
+        height: 352
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
