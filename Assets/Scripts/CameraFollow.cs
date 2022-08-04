@@ -23,8 +23,13 @@ public class CameraFollow : MonoBehaviour
     // LAteUpdate is called once everything in update is ran
     void LateUpdate()
     {
-            tempPos = transform.position;
-            tempPos.x = player.position.x;
+        // in a void function when you use return statement, it won't execute any code down below
+        //if the it is true, like if there is no more playerr then  it will just return 
+        if (!player)
+            return;
+
+        tempPos = transform.position;
+        tempPos.x = player.position.x;
 
 
         if (tempPos.x < minX)
