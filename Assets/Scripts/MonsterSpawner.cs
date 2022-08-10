@@ -28,7 +28,7 @@ public class MonsterSpawner : MonoBehaviour
         {
             //  always reunning but because it waits for a few random seconds
             //  it will not crash as it is taking its time to spawn a new monster
-            yield return new WaitForSeconds(Random.Range(2, 10));
+            yield return new WaitForSeconds(Random.Range(2, 8));
 
             //code below then gets executed after the yield for a few seconds
             randomIndex = Random.Range(0, monsterReference.Length);
@@ -47,7 +47,8 @@ public class MonsterSpawner : MonoBehaviour
                 //right side
                 spawnedMonster.transform.position = rightPos.position;
                 spawnedMonster.GetComponent<Monster>().speed = -Random.Range(4, 10);
-                spawnedMonster.transform.localScale = new Vector3(-1f, 1f, 1f);
+                spawnedMonster.transform.localScale = new Vector3(-spawnedMonster.transform.localScale.x,
+                    spawnedMonster.transform.localScale.y, spawnedMonster.transform.localScale.z);
             }
         } // while loop ends
     }
