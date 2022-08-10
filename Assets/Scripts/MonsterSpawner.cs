@@ -28,7 +28,7 @@ public class MonsterSpawner : MonoBehaviour
         {
             //  always reunning but because it waits for a few random seconds
             //  it will not crash as it is taking its time to spawn a new monster
-            yield return new WaitForSeconds(Random.Range(1, 5));
+            yield return new WaitForSeconds(Random.Range(2, 10));
 
             //code below then gets executed after the yield for a few seconds
             randomIndex = Random.Range(0, monsterReference.Length);
