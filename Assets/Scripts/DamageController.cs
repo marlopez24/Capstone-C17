@@ -27,15 +27,6 @@ public class DamageController : MonoBehaviour
         }
     }
 
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Enemy"))
-    //    {
-    //        Damage();
-    //    }
-    //}
-
     void Damage()
     {
         _healthController.playerHealth = _healthController.playerHealth - monsterDamage;

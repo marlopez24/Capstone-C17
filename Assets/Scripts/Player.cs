@@ -102,16 +102,6 @@ public class Player : MonoBehaviour
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
 
-        //if (isGrounded == true)
-        //{
-        //    anim.SetBool(JUMPING_ANIM, false);
-        //}
-        //else
-        //{
-        //    anim.SetBool(JUMPING_ANIM, true);
-        //}
-
-
     }
 
 

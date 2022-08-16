@@ -49,6 +49,7 @@ public class Stopwatch : MonoBehaviour
         scoreText.text = score.ToString();
         TimeSpan time = TimeSpan.FromSeconds(currentTime);
         currentTimeText.text = time.ToString(@"mm\:ss|:fff");
+        //CheckHighScore();
 
         //highscoretext.text = highScore.ToString();
 
@@ -59,6 +60,20 @@ public class Stopwatch : MonoBehaviour
 
 
     }
+
+
+    //void CheckHighScore()
+    //{
+    //    if(score > PlayerPrefs.GetInt("HighScore", 0))
+    //    {
+    //        PlayerPrefs.SetInt("Highscore", score);
+    //    }
+    //}
+
+    //void UpdateHighScoreText()
+    //{
+    //    highScoreText.text = $"HighScore: {PlayerPrefs.GetInt("HighScore", 0)}";
+    //}
 
     public void StartStopwatch()
     {
