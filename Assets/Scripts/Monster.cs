@@ -21,4 +21,6 @@ public class Monster : MonoBehaviour
     {
         myBody.velocity = new Vector2(speed, myBody.velocity.y);
     }
+
+
 } //class

@@ -11,6 +11,7 @@ public class MainMenuController : MonoBehaviour
             int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
 
         GameManager.instance.CharIndex = selectedCharacter;
+        FindObjectOfType<AudioManager>().Play("Click");
 
         SceneManager.LoadScene("Gameplay");
     }
